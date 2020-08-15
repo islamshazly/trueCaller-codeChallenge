@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="TrueCallerAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Truecaller10thCharacterRequest:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8sE-7S-kuC">
+                                <rect key="frame" x="16" y="74" width="382" height="40"/>
+                                <color key="backgroundColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PTO-s7-jra"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FxS-DS-UyX">
+                                <rect key="frame" x="16" y="801" width="382" height="45"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="VxS-Cw-DXR"/>
+                                </constraints>
+                                <state key="normal" title="Load">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TruecallerEvery10thCharacterRequest:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TrD-Xg-VaM">
+                                <rect key="frame" x="16" y="130" width="382" height="128"/>
+                                <color key="backgroundColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="bZG-Vp-rNZ"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TruecallerWordCounterRequest:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="U5S-Br-aLJ">
+                                <rect key="frame" x="16" y="274" width="382" height="511"/>
+                                <color key="backgroundColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8sE-7S-kuC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="3ks-qb-PoE"/>
+                            <constraint firstItem="TrD-Xg-VaM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Cvb-uL-S7s"/>
+                            <constraint firstItem="U5S-Br-aLJ" firstAttribute="top" secondItem="TrD-Xg-VaM" secondAttribute="bottom" constant="16" id="UKd-DJ-gcM"/>
+                            <constraint firstItem="FxS-DS-UyX" firstAttribute="top" secondItem="U5S-Br-aLJ" secondAttribute="bottom" constant="16" id="ead-nS-Ydz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FxS-DS-UyX" secondAttribute="bottom" constant="16" id="emT-QA-s4G"/>
+                            <constraint firstItem="8sE-7S-kuC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="h1x-SQ-Uyf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U5S-Br-aLJ" secondAttribute="trailing" constant="16" id="hBD-B0-vL8"/>
+                            <constraint firstItem="TrD-Xg-VaM" firstAttribute="top" secondItem="8sE-7S-kuC" secondAttribute="bottom" constant="16" id="kLG-1Q-bFO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FxS-DS-UyX" secondAttribute="trailing" constant="16" id="kjS-em-2Yl"/>
+                            <constraint firstItem="FxS-DS-UyX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kkO-Xk-Sx2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8sE-7S-kuC" secondAttribute="trailing" constant="16" id="mUd-uW-MRt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TrD-Xg-VaM" secondAttribute="trailing" constant="16" id="vFD-HL-Fdb"/>
+                            <constraint firstItem="U5S-Br-aLJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="waO-rk-dcq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="everyTenthCharTV" destination="TrD-Xg-VaM" id="Bae-qm-65q"/>
+                        <outlet property="refreshButton" destination="FxS-DS-UyX" id="d7V-zz-GiV"/>
+                        <outlet property="tenthCharTV" destination="8sE-7S-kuC" id="34Y-Pl-jFp"/>
+                        <outlet property="woredCountTV" destination="U5S-Br-aLJ" id="08d-fg-Wrt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184" y="113"/>
+        </scene>
+    </scenes>
+</document>
